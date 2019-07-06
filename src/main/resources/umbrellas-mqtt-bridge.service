@@ -1,0 +1,14 @@
+[Unit]
+# this file should be in: /etc/systemd/system
+
+Description=Umbrellas MQTT Bridge
+After=network-online.target
+
+[Service]
+User=pi
+ExecStart=/home/pi/umbrellas-mqtt-bridge.jar --server.port=9020
+SuccessExitStatus=143
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

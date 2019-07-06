@@ -1,1 +1,2 @@
-# umbrellas-mqtt-bridge
+# loungelights-mqtt-bridge
+loungelights-mqtt-bridge
